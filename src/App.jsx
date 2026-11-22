@@ -1,8 +1,8 @@
 
 import { useState, useEffect } from "react";
-import GameBoard from "./components/GameBoard";
-import Keyboard from "./components/Keyboard";
-import { checkGuess } from "./components/checkGuess";
+import GameBoard from "./Components/GameBoard";
+import Keyboard from "./Components/Keyboard";
+import { checkGuess } from "./Components/checkGuess";
 import "./App.css";
 
 const words = [
