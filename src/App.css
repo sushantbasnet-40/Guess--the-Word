@@ -1,0 +1,153 @@
+
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.app h1 {
+  font-size: 40px;
+  letter-spacing: 5px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin: 25px auto;
+}
+
+.row {
+  display: flex;
+  gap: 6px;
+}
+
+.tile {
+  width: 55px;
+  height: 55px;
+  border: 2px solid #d3d6da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: white;
+}
+
+.correct {
+  background-color: #6aaa64;
+  border-color: #6aaa64;
+  color: white;
+}
+
+.present {
+  background-color: #c9b458;
+  border-color: #c9b458;
+  color: white;
+}
+
+.absent {
+  background-color: #787c7e;
+  border-color: #787c7e;
+  color: white;
+}
+
+.keyboard {
+  margin: 35px auto;
+  max-width: 520px;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.key {
+  height: 55px;
+  min-width: 35px;
+  padding: 0 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #d3d6da;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.key:hover {
+  opacity: 0.8;
+}
+
+.wide-key {
+  min-width: 65px;
+  font-size: 12px;
+}
+
+.game-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  min-width: 250px;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 480px) {
+  .tile {
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+  }
+
+  .key {
+    min-width: 27px;
+    height: 48px;
+    padding: 0 5px;
+    font-size: 12px;
+  }
+
+  .wide-key {
+    min-width: 48px;
+    font-size: 10px;
+  }
+
+  .app {
+    padding: 10px;
+  }
+}
+
+.play-again {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background-color: #6aaa64;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.play-again:hover {
+  background-color: #538d4e;
+}
